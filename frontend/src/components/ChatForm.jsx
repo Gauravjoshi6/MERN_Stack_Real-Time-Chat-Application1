@@ -13,7 +13,7 @@ const ChatForm = () => {
 
 
   useEffect(() => {
-    const socket = io("http://localhost:8000");
+    const socket = io("https://mern-stack-real-time-chat-application1.onrender.com");
     setSocket(socket);
 
     socket.on("connect", () => {
